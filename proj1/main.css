@@ -46,15 +46,7 @@ pre{
     font-style: bold;
     font-size: 24px;
 }
-#value_input button:last-child{
-    
-    width: 31%;
-}
-#value_input button:nth-last-child(2){
-    
-    width: 64%;
-}
-    
+
 
 #operator_input{
     margin: 1% 0 1% 0;

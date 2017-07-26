@@ -7,7 +7,7 @@
     let operator_input = doc.getElementById("operator_input");
     let control_input = doc.getElementById("control_input");
     
-    const VARIABLE = [7,8,9,4,5,6,1,2,3,0,"."];
+    const VARIABLE = [7,8,9,4,5,6,1,2,3,0,".","←"];
     const OPERATOR = Array.from("+-*/()C=");
     let tmp = "";
     (function(){
@@ -22,6 +22,11 @@
         let button = creatButton(variable);
         value_input.appendChild(button);
         button.onclick = function(){
+            console.log("←");
+            if(variable === "←"){
+            tmp = tmp.slice(0, tmp.length - 1);  
+            }
+            else
             tmp += variable;
         }
     }
